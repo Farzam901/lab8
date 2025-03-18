@@ -1,0 +1,27 @@
+### Login
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  "username": "user1",
+  "password": "password1"
+}
+
+### Create an Event
+POST http://localhost:3000/events
+Content-Type: application/json
+
+{
+  "name": "Team Meeting",
+  "description": "Discuss project updates",
+  "date": "2025-03-25",
+  "time": "10:00",
+  "category": "Meetings",
+  "reminder": true
+}
+
+### Get Events Sorted by Date
+GET http://localhost:3000/events?sortBy=date
+
+### Logout
+GET http://localhost:3000/auth/logout
